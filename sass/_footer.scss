@@ -1,1 +1,90 @@
 /*Footer*/
+.footer {
+  @include imageBg;
+  .overlayFooter {
+    @include paddingSection;
+    background-color: $overlay;
+    .footerBrandContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      text-align: center;
+      .brand {
+        margin-bottom: 40px;
+      }
+      .footerMenu {
+        .footerMenuContainer {
+          .itemMenu {
+            margin-bottom: 24px;
+            .linkMenu {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+    .footerBrandRrss {
+      margin-bottom: 40px;
+      .rrssFooter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0;
+        img {
+          width: 20%;
+        }
+        p {
+          font: $body2;
+        }
+      }
+    }
+    .licenceContainer {
+      p {
+        text-align: center;
+        font: $body1;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    .overlayFooter {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+      .footerBrandContainer {
+        width: 55%;
+        align-items: baseline;
+        .brand {
+          margin-bottom: 10px;
+        }
+        .footerMenu {
+          width: 100%;
+          .footerMenuContainer {
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+      }
+      .footerBrandRrss {
+        width: 40%;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0;
+        .rrssFooter {
+          gap: 5px;
+          padding: 5px 0;
+        }
+      }
+      .licenceContainer {
+        width: 100%;
+      }
+    }
+  }
+}
