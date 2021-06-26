@@ -271,30 +271,54 @@ header {
   margin-bottom: 40px;
 }
 
-.videogamesContainer .videogamesContent .videogamesCarousel {
+.videogamesContainer .videogamesContent .videogamesCarouselContainer {
   overflow-x: scroll;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
 }
 
-.videogamesContainer .videogamesContent .videogamesCarousel .videogameCard {
+.videogamesContainer .videogamesContent .videogamesCarouselContainer::-webkit-scrollbar {
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+.videogamesContainer .videogamesContent .videogamesCarouselContainer::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.videogamesContainer .videogamesContent .videogamesCarouselContainer::-webkit-scrollbar-track:horizontal {
+  background-color: #dadada;
+  border-radius: 10px;
+}
+
+.videogamesContainer .videogamesContent .videogamesCarouselContainer::-webkit-scrollbar-thumb {
+  background-color: #863b82;
+  border-radius: 20px;
+  border: 1px solid #000000;
+  -webkit-box-shadow: 2px 2px 8px #ffffff inset;
+          box-shadow: 2px 2px 8px #ffffff inset;
+}
+
+.videogamesContainer .videogamesContent .videogamesCarouselContainer .videogamesCarouselContent {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.videogamesContainer .videogamesContent .videogamesCarouselContainer .videogamesCarouselContent .card {
+  width: 280px;
   background-color: #ffffff;
   border-radius: 10%;
   padding: 40px 25px;
-  margin: 0 10px;
+  margin: 0 10px 20px;
 }
 
-.videogamesContainer .videogamesContent .videogamesCarousel .videogameCard h3 {
+.videogamesContainer .videogamesContent .videogamesCarouselContainer .videogamesCarouselContent .card h3 {
   color: #031455;
   text-align: center;
   font: bold 2.4rem/3.2rem "Inter", sans-serif;
   margin-bottom: 20px;
 }
 
-.videogamesContainer .videogamesContent .videogamesCarousel .videogameCard p {
+.videogamesContainer .videogamesContent .videogamesCarouselContainer .videogamesCarouselContent .card p {
   font: normal 1.6rem/2.6rem "Inter", sans-serif;
   color: #031455;
   text-align: center;

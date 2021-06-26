@@ -9,25 +9,43 @@
       text-align: center;
       margin-bottom: 40px;
     }
-    .videogamesCarousel {
+    .videogamesCarouselContainer {
       overflow-x: scroll;
-      display: flex;
-      flex-wrap: nowrap;
-      .videogameCard {
-        background-color: $white;
-        border-radius: 10%;
-        padding: 40px 25px;
-        margin: 0 10px;
-        h3 {
-          color: $colorTertiary;
-          text-align: center;
-          font: $headLine4;
-          margin-bottom: 20px;
-        }
-        p {
-          font: $headLine8;
-          color: $colorTertiary;
-          text-align: center;
+      &::-webkit-scrollbar {
+        appearance: none;
+      }
+      &::-webkit-scrollbar:horizontal {
+        height: 10px;
+      }
+      &::-webkit-scrollbar-track:horizontal {
+        background-color: $grey;
+        border-radius: 10px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: $colorPrimary;
+        border-radius: 20px;
+        border: 1px solid $black;
+        box-shadow: 2px 2px 8px $white inset;
+      }
+      .videogamesCarouselContent {
+        display: inline-flex;
+        .card {
+          width: 280px;
+          background-color: $white;
+          border-radius: 10%;
+          padding: 40px 25px;
+          margin: 0 10px 20px;
+          h3 {
+            color: $colorTertiary;
+            text-align: center;
+            font: $headLine4;
+            margin-bottom: 20px;
+          }
+          p {
+            font: $headLine8;
+            color: $colorTertiary;
+            text-align: center;
+          }
         }
       }
     }
