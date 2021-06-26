@@ -1,17 +1,16 @@
 /*Intro Section*/
 .introContainer {
+  @include marginSection;
   background-color: $colorPrimary;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 20px;
   .introImg {
     margin-bottom: 40px;
   }
   .introDescription {
     h2 {
-      font: $headLine2;
-      margin-bottom: 20px;
+      @include titleSection;
       color: $colorSecondary;
     }
     p {

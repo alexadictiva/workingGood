@@ -23,3 +23,12 @@ $overlay: rgba(0, 0, 0, 0.5);
 $grey: rgba(218, 218, 218, 1);
 $white: #ffffff;
 $black: #000000;
+
+@mixin titleSection {
+  font: $headLine1;
+  margin-bottom: 40px;
+  text-align: center;
+}
+@mixin marginSection {
+  padding: 40px 20px;
+}

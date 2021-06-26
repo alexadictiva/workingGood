@@ -140,6 +140,7 @@ header {
 
 /*Intro Section*/
 .introContainer {
+  padding: 40px 20px;
   background-color: #863b82;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,7 +152,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 40px 20px;
 }
 
 .introContainer .introImg {
@@ -159,8 +159,9 @@ header {
 }
 
 .introContainer .introDescription h2 {
-  font: bold 3.5rem/4rem "Inter", sans-serif;
-  margin-bottom: 20px;
+  font: bold 4rem/5.4rem "Inter", sans-serif;
+  margin-bottom: 40px;
+  text-align: center;
   color: #fff974;
 }
 
@@ -194,10 +195,10 @@ header {
 }
 
 .servicesContainer .servicesContent h2 {
-  color: #863b82;
   font: bold 4rem/5.4rem "Inter", sans-serif;
-  text-align: center;
   margin-bottom: 40px;
+  text-align: center;
+  color: #863b82;
 }
 
 .servicesContainer .servicesContent .servicesDescription {
@@ -266,9 +267,9 @@ header {
 
 .videogamesContainer .videogamesContent h2 {
   font: bold 4rem/5.4rem "Inter", sans-serif;
-  color: #fff974;
-  text-align: center;
   margin-bottom: 40px;
+  text-align: center;
+  color: #fff974;
 }
 
 .videogamesContainer .videogamesContent .videogamesCarouselContainer {
