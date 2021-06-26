@@ -49,6 +49,13 @@ img {
   max-width: 1024px;
 }
 
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
 /*Header*/
 .header {
   position: fixed;
@@ -93,7 +100,7 @@ img {
 .header .menu {
   position: absolute;
   top: 60px;
-  right: 0px;
+  right: -768px;
   height: 100vh;
   background-color: #ffffff;
   width: 50%;
@@ -101,8 +108,67 @@ img {
   transition: right 0.3s ease-in-out;
 }
 
+.header .menu .menuContainer {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.header .menu .menuContainer .itemMenu {
+  padding: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.header .menu .menuContainer .itemMenu:hover {
+  -webkit-box-shadow: 384px 0 8px #863b82 inset;
+          box-shadow: 384px 0 8px #863b82 inset;
+}
+
+.header .menu .menuContainer .itemMenu .linkMenu {
+  color: #031455;
+}
+
 .header .hidden {
-  right: -768px;
+  right: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .header .buttonMenuContainer label {
+    display: none;
+  }
+  .header .menu {
+    height: 60px;
+    top: 0;
+    width: 100%;
+    right: 0;
+  }
+  .header .menu .menuContainer {
+    width: 100%;
+    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .header .menu .menuContainer .itemMenu:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-bottom: #863b82 solid 2px;
+  }
 }
 
 /*Banner Section*/
