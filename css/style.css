@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap");
-/*Generales*/
+/*Generals*/
 * {
   margin: 0;
   padding: 0;
@@ -45,6 +45,12 @@ img {
   max-width: 1024px;
 }
 
+/*Header*/
+header {
+  background-color: red;
+}
+
+/*Banner Section*/
 .bannerContainer {
   width: 100%;
   background-image: url(./../assets/img/bannerBg.png);
@@ -132,6 +138,7 @@ img {
   }
 }
 
+/*Intro Section*/
 .introContainer {
   background-color: #863b82;
   display: -webkit-box;
@@ -180,6 +187,7 @@ img {
   }
 }
 
+/*Services Section*/
 .servicesContainer {
   padding: 40px 20px;
   background-color: #fff974;
@@ -250,6 +258,7 @@ img {
   }
 }
 
+/*Videogames Section*/
 .videogamesContainer {
   background-color: #031455;
   padding: 40px 20px;
@@ -290,4 +299,8 @@ img {
   color: #031455;
   text-align: center;
 }
+
+/*Why Us Section*/
+/*Contact Section*/
+/*Footer*/
 /*# sourceMappingURL=style.css.map */
