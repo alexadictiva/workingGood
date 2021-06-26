@@ -8,34 +8,67 @@
     <title>Working Good</title>
   </head>
   <body>
-    <header class="header">
-      <div>
-        <label for="buttonMenu">
-          menu
-          <span class="span span1"></span>
-          <span class="span span1"></span>
-          <span class="span span1"></span>
-        </label>
-        <input type="checkbox" class="buttonMenu" id="buttonMenu" />
-      </div>
-      <nav class="menu">
-        <ul class="menuContainer">
-          <li class="itemMenu">
-            <a href="about" class="linkMenu">¿Quiénes Somos?</a>
-          </li>
-          <li class="itemMenu">
-            <a href="services" class="linkMenu">Servicios</a>
-          </li>
-          <li class="itemMenu">
-            <a href="contact" class="linkMenu">Contáctanos</a>
-          </li>
-          <li class="itemMenu">
-            <a href="videogames" class="linkMenu">Videojuegos</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main></main>
-    <footer></footer>
+    <div class="wrapper">
+      <header class="header">
+        <div>
+          <label for="buttonMenu">
+            menu
+            <span class="span span1"></span>
+            <span class="span span1"></span>
+            <span class="span span1"></span>
+          </label>
+          <input type="checkbox" class="buttonMenu" id="buttonMenu" />
+        </div>
+        <nav class="menu">
+          <ul class="menuContainer">
+            <li class="itemMenu">
+              <a href="about" class="linkMenu">¿Quiénes Somos?</a>
+            </li>
+            <li class="itemMenu">
+              <a href="services" class="linkMenu">Servicios</a>
+            </li>
+            <li class="itemMenu">
+              <a href="contact" class="linkMenu">Contáctanos</a>
+            </li>
+            <li class="itemMenu buttonVideogame">
+              <a href="videogames" class="linkMenu">Videojuegos</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="bannerContainer">
+          <div class="bannerOverlay">
+            <div class="bannerContent">
+              <div class="bannerImgContainer">
+                <img
+                  src="./assets/img/bannerImg.png"
+                  alt="Guys playing videogames"
+                />
+              </div>
+              <div class="bannerDescription">
+                <h1>
+                  Diseñamos nuestros juegos para ejercitar la
+                  <span>cognición</span> .
+                </h1>
+                <p>
+                  Fundada en 2016, Working Good es un desarrollador móvil con
+                  más de
+                  <span>20,000,000</span> millones de usuarios que han jugado a
+                  través del tiempo en nuestros distintos juegos en Facebook
+                  Instant Games y en 2021 ingresando a las tiendas
+                  <span>Playstore y iOS</span>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="introContainer" id="about"></section>
+        <section class="servicesContainer" id="services"></section>
+        <section class="videogamesContainer"></section>
+        <section class="contactContainer" id="contact"></section>
+      </main>
+      <footer></footer>
+    </div>
   </body>
 </html>

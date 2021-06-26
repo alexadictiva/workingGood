@@ -13,6 +13,18 @@
 
 body {
   font: normal 1.6rem/2.5rem "Inter", sans-serif;
+  color: #ffffff;
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 ul {
@@ -26,5 +38,93 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1024px;
+}
+
+.bannerContainer {
+  width: 100%;
+  background-image: url(./../assets/img/bannerBg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bannerContainer .bannerOverlay {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#be5281a1), color-stop(55.73%, #3c168ea1), to(#002094a1));
+  background-image: linear-gradient(180deg, #be5281a1 0%, #3c168ea1 55.73%, #002094a1 100%);
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+}
+
+.bannerContainer .bannerOverlay .bannerContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bannerContainer .bannerOverlay .bannerContent .bannerDescription h1 {
+  margin-bottom: 40px;
+  font: bold 4rem/5.4rem "Inter", sans-serif;
+  text-align: center;
+}
+
+.bannerContainer .bannerOverlay .bannerContent .bannerDescription h1 span {
+  color: #fff974;
+}
+
+.bannerContainer .bannerOverlay .bannerContent .bannerDescription p {
+  font: bold 1.7rem/2.7rem "Inter", sans-serif;
+}
+
+.bannerContainer .bannerOverlay .bannerContent .bannerDescription p span {
+  color: #fff974;
+}
+
+@media screen and (min-width: 768px) {
+  .bannerContainer .bannerOverlay {
+    padding: 40px;
+  }
+  .bannerContainer .bannerOverlay .bannerContent {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .bannerContainer .bannerOverlay .bannerContent .bannerImgContainer {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 50%;
+  }
+  .bannerContainer .bannerOverlay .bannerContent .bannerDescription {
+    width: 50%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .bannerContainer .bannerOverlay .bannerContent .bannerDescription h1 {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bannerContainer .bannerOverlay {
+    padding: 50px 100px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

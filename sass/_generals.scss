@@ -8,7 +8,12 @@ $headLine5: bold 1.7rem/2.7rem $fontBase;
 $headLine6: bold 1.3rem/1.9rem $fontBase;
 $body1: normal 1.6rem/2.5rem $fontBase;
 $body2: bold 1.6rem/2.5rem $fontBase;
-$gradient1: linear-gradient(180deg, #be5280 0%, #3c168e 55.73%, #002094 100%);
+$gradient1: linear-gradient(
+  180deg,
+  #be5281a1 0%,
+  #3c168ea1 55.73%,
+  #002094a1 100%
+);
 $gradiente2: linear-gradient(180deg, #001357 0%, #3c168e 53.65%, #be5280 100%);
 $colorPrimary: rgba(134, 59, 130, 1);
 $colorSecondary: rgba(255, 249, 116, 1);
@@ -29,6 +34,11 @@ $black: #000000;
 
 body {
   font: $body1;
+  color: $white;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 ul {
   list-style: none;
@@ -39,4 +49,9 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1024px;
 }
