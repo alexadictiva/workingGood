@@ -12,7 +12,9 @@
     .bannerContent {
       display: flex;
       flex-direction: column;
-
+      .bannerImgContainer {
+        text-align: center;
+      }
       .bannerDescription {
         h1 {
           margin-bottom: 40px;
