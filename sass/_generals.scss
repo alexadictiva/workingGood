@@ -1,0 +1,42 @@
+/*Generales*/
+$fontBase: "Inter", sans-serif;
+$headLine1: bold 4rem/5.4rem $fontBase;
+$headLine2: bold 3.5rem/4rem $fontBase;
+$headLine3: bold 2.4rem/3.2rem $fontBase;
+$headLine4: bold 2rem/3rem $fontBase;
+$headLine5: bold 1.7rem/2.7rem $fontBase;
+$headLine6: bold 1.3rem/1.9rem $fontBase;
+$body1: normal 1.6rem/2.5rem $fontBase;
+$body2: bold 1.6rem/2.5rem $fontBase;
+$gradient1: linear-gradient(180deg, #be5280 0%, #3c168e 55.73%, #002094 100%);
+$gradiente2: linear-gradient(180deg, #001357 0%, #3c168e 53.65%, #be5280 100%);
+$colorPrimary: rgba(134, 59, 130, 1);
+$colorSecondary: rgba(255, 249, 116, 1);
+$colorTertiary: rgba(3, 20, 85, 1);
+$overlay: rgba(0, 0, 0, 0.5);
+$grey: rgba(218, 218, 218, 1);
+$white: #ffffff;
+$black: #000000;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font: $body1;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
