@@ -1,7 +1,7 @@
 /*Videogames Section*/
 .videogamesContainer {
   background-color: $colorTertiary;
-  @include marginSection;
+  @include paddingSection;
   .videogamesContent {
     h2 {
       @include titleSection;
@@ -41,7 +41,7 @@
             margin-bottom: 20px;
           }
           p {
-            font: $headLine8;
+            font: $body1;
             color: $colorTertiary;
             text-align: center;
           }

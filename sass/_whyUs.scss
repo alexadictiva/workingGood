@@ -1,1 +1,90 @@
 /*Why Us Section*/
+.whyUsContainer {
+  @include imageBg;
+  .whyUsContainerOverlay {
+    @include paddingSection;
+    background-image: $gradiente2;
+    .whyUsContent {
+      h2 {
+        @include titleSection;
+      }
+      p {
+        text-align: center;
+        font: $headLine8;
+        margin-bottom: 40px;
+      }
+      .whyUsDescription {
+        .whyUsDescriptionContainer {
+          text-align: center;
+          .descriptionImg {
+            margin-bottom: 20px;
+          }
+          .descriptionText {
+            h2 {
+              @include titleSection;
+              color: $colorSecondary;
+            }
+            img {
+              margin-bottom: -60px;
+            }
+            p {
+              font: $body1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .whyUsContainer {
+    .whyUsContainerOverlay {
+      .whyUsContent {
+        .whyUsDescription {
+          .whyUsDescriptionContainer {
+            .descriptionText {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              img {
+                margin-bottom: -120px;
+              }
+              p {
+                width: 50%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .whyUsContainer {
+    .whyUsContainerOverlay {
+      .whyUsContent {
+        .whyUsDescription {
+          .whyUsDescriptionContainer {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .descriptionImg {
+              width: 40%;
+            }
+            .descriptionText {
+              width: 60%;
+              img {
+                margin-bottom: -140px;
+              }
+              p {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

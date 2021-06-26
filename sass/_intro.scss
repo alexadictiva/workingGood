@@ -1,6 +1,6 @@
 /*Intro Section*/
 .introContainer {
-  @include marginSection;
+  @include paddingSection;
   background-color: $colorPrimary;
   display: flex;
   flex-direction: column;

@@ -1,6 +1,6 @@
 /*Services Section*/
 .servicesContainer {
-  @include marginSection;
+  @include paddingSection;
   background-color: $colorSecondary;
   .servicesContent {
     h2 {

@@ -321,7 +321,7 @@ header {
 }
 
 .videogamesContainer .videogamesContent .videogamesCarouselContainer .videogamesCarouselContent .card p {
-  font: normal 1.6rem/2.6rem "Inter", sans-serif;
+  font: normal 1.6rem/2.5rem "Inter", sans-serif;
   color: #031455;
   text-align: center;
 }
@@ -357,6 +357,100 @@ header {
 }
 
 /*Why Us Section*/
+.whyUsContainer {
+  width: 100%;
+  background-image: url(./../assets/img/bannerBg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.whyUsContainer .whyUsContainerOverlay {
+  padding: 40px 20px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#001357a1), color-stop(53.65%, #3c168ea1), to(#be5280a1));
+  background-image: linear-gradient(180deg, #001357a1 0%, #3c168ea1 53.65%, #be5280a1 100%);
+}
+
+.whyUsContainer .whyUsContainerOverlay .whyUsContent h2 {
+  font: bold 4rem/5.4rem "Inter", sans-serif;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.whyUsContainer .whyUsContainerOverlay .whyUsContent p {
+  text-align: center;
+  font: normal 2rem/3rem "Inter", sans-serif;
+  margin-bottom: 40px;
+}
+
+.whyUsContainer .whyUsContainerOverlay .whyUsContent .whyUsDescription .whyUsDescriptionContainer {
+  text-align: center;
+}
+
+.whyUsContainer .whyUsContainerOverlay .whyUsContent .whyUsDescription .whyUsDescriptionContainer .descriptionImg {
+  margin-bottom: 20px;
+}
+
+.whyUsContainer .whyUsContainerOverlay .whyUsContent .whyUsDescription .whyUsDescriptionContainer .descriptionText h2 {
+  font: bold 4rem/5.4rem "Inter", sans-serif;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #fff974;
+}
+
+.whyUsContainer .whyUsContainerOverlay .whyUsContent .whyUsDescription .whyUsDescriptionContainer .descriptionText img {
+  margin-bottom: -60px;
+}
+
+.whyUsContainer .whyUsContainerOverlay .whyUsContent .whyUsDescription .whyUsDescriptionContainer .descriptionText p {
+  font: normal 1.6rem/2.5rem "Inter", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  .whyUsContainer .whyUsContainerOverlay .whyUsContent .whyUsDescription .whyUsDescriptionContainer .descriptionText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .whyUsContainer .whyUsContainerOverlay .whyUsContent .whyUsDescription .whyUsDescriptionContainer .descriptionText img {
+    margin-bottom: -120px;
+  }
+  .whyUsContainer .whyUsContainerOverlay .whyUsContent .whyUsDescription .whyUsDescriptionContainer .descriptionText p {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .whyUsContainer .whyUsContainerOverlay .whyUsContent .whyUsDescription .whyUsDescriptionContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+  }
+  .whyUsContainer .whyUsContainerOverlay .whyUsContent .whyUsDescription .whyUsDescriptionContainer .descriptionImg {
+    width: 40%;
+  }
+  .whyUsContainer .whyUsContainerOverlay .whyUsContent .whyUsDescription .whyUsDescriptionContainer .descriptionText {
+    width: 60%;
+  }
+  .whyUsContainer .whyUsContainerOverlay .whyUsContent .whyUsDescription .whyUsDescriptionContainer .descriptionText img {
+    margin-bottom: -140px;
+  }
+  .whyUsContainer .whyUsContainerOverlay .whyUsContent .whyUsDescription .whyUsDescriptionContainer .descriptionText p {
+    width: 100%;
+  }
+}
+
 /*Contact Section*/
 /*Footer*/
 /*# sourceMappingURL=style.css.map */
