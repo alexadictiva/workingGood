@@ -326,6 +326,12 @@ header {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .videogamesContainer .videogamesContent .videogamesCarouselContainer .videogamesCarouselContent .card {
+    width: 450px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .videogamesContainer .videogamesContent .videogamesCarouselContainer {
     overflow-x: hidden;
@@ -338,7 +344,6 @@ header {
         flex-wrap: wrap;
   }
   .videogamesContainer .videogamesContent .videogamesCarouselContainer .videogamesCarouselContent .card {
-    width: 450px;
     height: 270px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -452,5 +457,50 @@ header {
 }
 
 /*Contact Section*/
+.contactContainer {
+  padding: 40px 20px;
+  background-color: #dadada;
+}
+
+.contactContainer h2 {
+  font: bold 4rem/5.4rem "Inter", sans-serif;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #000000;
+}
+
+.contactContainer .contactContent {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contactContainer .contactContent .rrssContainer {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 2px 8px #031455;
+          box-shadow: 2px 2px 8px #031455;
+  gap: 10px;
+}
+
+.contactContainer .contactContent .rrssContainer p {
+  font: bold 1.3rem/1.9rem "Inter", sans-serif;
+  color: #636363;
+}
+
 /*Footer*/
 /*# sourceMappingURL=style.css.map */

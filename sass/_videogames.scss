@@ -50,7 +50,19 @@
     }
   }
 }
-
+@media screen and (min-width: 768px) {
+  .videogamesContainer {
+    .videogamesContent {
+      .videogamesCarouselContainer {
+        .videogamesCarouselContent {
+          .card {
+            width: 450px;
+          }
+        }
+      }
+    }
+  }
+}
 @media screen and (min-width: 1024px) {
   .videogamesContainer {
     .videogamesContent {
@@ -61,7 +73,6 @@
           flex-wrap: wrap;
 
           .card {
-            width: 450px;
             height: 270px;
             display: flex;
             flex-direction: column;

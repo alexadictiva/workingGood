@@ -1,1 +1,29 @@
 /*Contact Section*/
+.contactContainer {
+  @include paddingSection;
+  background-color: $grey;
+  h2 {
+    @include titleSection;
+    color: $black;
+  }
+  .contactContent {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .rrssContainer {
+      background-color: $white;
+      padding: 20px;
+      margin: 5px;
+      display: flex;
+      align-items: center;
+      border-radius: 20px;
+      box-shadow: 2px 2px 8px $colorTertiary;
+      gap: 10px;
+      p {
+        font: $headLine7;
+        color: $darkgrey;
+      }
+    }
+  }
+}
